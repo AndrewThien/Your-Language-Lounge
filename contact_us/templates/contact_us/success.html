@@ -1,0 +1,10 @@
+{% extends "base_contact.html" %}
+{% load static %} 
+{% block content%}
+<br>
+<h2> Your message has been sent. Thanks!</h2>
+<div class="text-center">
+<a href="{% url 'homepage:homepage'%}" class="btn btn-info" role="button" style="font-family: Times; padding: 5px; font-size:17px;" 
+>Come back to the main page</a>
+<div>
+{%endblock%}

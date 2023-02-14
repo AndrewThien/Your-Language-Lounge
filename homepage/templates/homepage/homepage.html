@@ -1,0 +1,84 @@
+{%extends "base_home.html"%}
+{% load static %}  
+{%block homepage%}
+
+<div class = "row">
+    <div class="col-md">
+        <img class = "img-fluid" src={% static 'homepage/my_images/Cover1.jpg' %} alt="cover picture" height="300px" >
+    </div>
+</div>
+<div class = "row background">
+    <div class="col-md text-center">
+        <br>
+        <h2>Here's Your Language Lounge.<h2>
+        <h2>Sit, relax, and have a class with us.</h2>
+        <br>
+        <a href="{% url 'contact_us:contact_us'%}" class="btn btn-outline-secondary" data-mdb-ripple-color="dark" role="button" style="font-family: Times; padding: 5px; font-size:25px"> -   Book a trial class today!   - </a><br>
+    <br>
+    </div>
+</div>
+<div class = "row background_one">
+    <div class="col-md text-center">
+        <h3><strong> Why us?<strong><h3>
+            <br>
+            <div class = "row">
+                <div class="col-md-4">
+                    <h3>Your Lounge<h3>
+                    <p> A lounge is a place where you can sit down and relax. You can do the same in Your Language Lounge. 
+                        Here, one of our main goals is to provide a safe, enjoyable and friendly online learning atmosphere where everyone can speak comfortably<p>
+                </div>          
+                <div class="col-md-4">
+                    <h3>Our Care<h3>
+                    <p> Because we truly care about your progress, we apply a unique tracking system to our teaching program. 
+                        A Two-Sided Report (TSR), proven effective in enhancing your online learning, will be provided every two weeks<p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Your Choice<h3>
+                    <p> Our teachers also care about your needs, so your Language Lounge offers many online English and IELTS course options for a reasonable fee. 
+                        Especially in the Customised course, you can tell us about the length of the course, the number of sessions, or you can choose who to study with<p>
+                </div>
+            </div>
+            <a href="{% url 'why_us:our_values'%}" class="btn btn-outline-secondary" data-mdb-ripple-color="dark" role="button" style="font-family: Times; padding: 5px; font-size:25px"> -   Read more   - </a>
+    </div>
+</div>
+
+<div class = "row background_one">
+    <div class="col-md text-center">
+        <h3><strong>Our Current Courses<strong><h3>
+            <br>
+            <div class = "row card">
+                <div class="col-md">
+                    <h4>Lounge One: Communicative English <h4>
+                    <p> Develop your speaking, listening, reading and writing skills, and improve your grammar and vocabulary in our communicative General English classes. 
+                        We offer courses at all levels and your level will be tested at the beginning and at the end of the course. <a href = "{% url 'classes:communicative'%}">(Read more ...)<a><p>
+                </div>
+            </div>  
+            <br>
+            <div class = "row card">
+                <div class="col-md">
+                    <h4>Lounge Two: IELTS Preparation<h4>
+                    <p> If you need IELTS to enter University or simply to step up your CV and apply for a job, we are here to provide full support with the preparation. 
+                        Develop your speaking, listening, reading and writing skills with us now and learn how to master your exam. <a href = "{% url 'classes:ielts'%}">(Read more ...)<a><p>
+                </div>
+            </div>         
+    </div>
+</div>
+<hr>
+<div class = "row background_one">
+    <div class="col-md text-center">
+        <h3><strong>Posts about Learning and Teaching English <strong><h3>
+            <br>
+            <div class = "row">
+                <div class="col-md">
+                    <p> Our website also has a section containing updated and useful posts about learning and teaching English. 
+                        You can also express your opinions about our posts by login and answering a small survey in the end of each post.
+                        Check it out <a href = "{% url 'your_library:your_library'%}">here<a>.<p>
+                </div>
+            </div>  
+    </div>
+</div>
+<hr>
+<div class="background_one" style="display:flex;justify-content:center"><iframe src="https://giphy.com/embed/uRPqTDNdZK3G6j8w26" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+
+
+{%endblock%}

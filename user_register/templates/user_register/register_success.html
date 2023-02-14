@@ -1,0 +1,27 @@
+{% extends "base_register.html" %}
+{% load static %}  
+{% block content %} 
+
+{% load crispy_forms_tags %}         
+
+<!--Register part was taken and adapted from this page: https://ordinarycoders.com/blog/article/django-user-register-login-logout?fbclid=IwAR21H5nDP0V0nGA-1iBP5UwVGIrwnG9uQEoSO-MlZQoHnksLGVgZQ4elk-g--> 
+
+<div class="container py-5">
+    <h2> Thanks! Registration is successful. </h2>
+    <h3>We are happy to have you here.<h3>
+    <a href="{% url 'homepage:homepage'%}" class="btn btn-info" role="button" style="font-family: Times; padding: 5px; font-size:17px;" 
+    >Come back to the main page</a>
+    
+    <a href="{% url 'your_library:your_library'%}" class="btn btn-info" role="button" style="font-family: Times; padding: 5px; font-size:17px;" 
+    >Go to Learning English Materials section</a>
+    
+    <a href="{% url 'user_auth:logout_user'%}" class="btn btn-warning" role="button" style="font-family: Times; padding: 5px; font-size:17px;" 
+    >Logout</a>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}

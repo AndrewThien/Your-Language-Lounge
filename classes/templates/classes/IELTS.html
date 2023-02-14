@@ -1,0 +1,41 @@
+{%extends "base_classes.html"%}
+{% load static %}  
+{%block content%}
+<div class = "row">
+    <div class="col-md">
+        <br>
+        <h2>IELTS Preparation Course<h2>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-4">
+        <div style="display:flex;justify-content:center">
+        <img class = "img-fluid" src={% static 'classes/my_images/class2.png' %} alt="IELTS course" width="400" height="500" >
+        </div>
+    </div>
+    <div class="col-md-7">
+        <h3 style="text-align: center; font-size: 40px;">Course Information</h3>
+        <p>If you need IELTS to enter University or simply to step up your CV and apply for a job, we are here to provide full support with the preparation. Develop your speaking, listening, reading and writing skills with us now and learn how to master your exam. 
+            <br>Our IELTS preparation classes are suitable for beginners, intermediate and advanced learners. We will test your level at the beginning and at the end of the course. 
+            <br>
+            <br>Please see below for course options. 
+            <br>Want another option? Please contact us. <p>
+    </div>
+</div>
+<div class="row">
+    <h3 style="text-align: center; font-size: 40px;">Course Options</h3>
+    <div class="col-md-6">
+        <h4>Individual Class: £22.5/lesson (£540/course)</h4>
+        <p style='text-align: center;'>12 weeks; Two sessions/week; 75 mins/session; Only you!<p>
+    </div>
+    <div class="col-md-6">
+        <h4>Group Class: £15/lesson (£360/course)</h4>
+        <p style='text-align: center'>12 weeks; Two sessions/week; 75 mins/lesson, maximum 4 students/group<p>
+        <br>
+    </div>
+    <br>
+    <div class="text-center"><a href="{% url 'contact_us:contact_us'%}" class="btn btn-outline-secondary" data-mdb-ripple-color="dark" role="button" style="font-family: Times; padding: 5px; font-size:25px"> -   Contact Us   - </a></div>
+</div>
+
+{%endblock%}

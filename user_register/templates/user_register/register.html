@@ -1,0 +1,30 @@
+{% extends "base_register.html" %}
+{% load static %}  
+{% block content %} 
+
+{% load crispy_forms_tags %}         
+
+<!--Register part was taken and adapted from this page: https://ordinarycoders.com/blog/article/django-user-register-login-logout?fbclid=IwAR21H5nDP0V0nGA-1iBP5UwVGIrwnG9uQEoSO-MlZQoHnksLGVgZQ4elk-g--> 
+
+<div class="container py-5">
+	<h1>Register</h1>
+
+	{% if messages %}
+	<ul class="messages">
+		{% for message in messages %}
+		<li style = 'color:red'{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+
+	<form method="POST">
+		{% csrf_token %}
+		{{ register_form|crispy }}                    
+		<button class="btn btn-primary" type="submit">Register</button>
+		<a href="{% url 'homepage:homepage'%}" class="btn btn-info" role="button" style="font-family: Times; padding: 5px; font-size:17px;" >
+			Come back to the main page</a>
+	</form>
+	<p class="text-center">If you already have an account, <a href="{% url 'user_auth:login'%}">login</a> instead.</p>
+</div>
+
+{% endblock %}

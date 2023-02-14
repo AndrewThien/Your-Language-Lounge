@@ -1,0 +1,26 @@
+{%extends "base_contact.html"%}
+{% load static %}
+  
+{%block content%}
+{% load crispy_forms_tags %}  
+
+<div class="container py-5">
+	<h1>Contact Us</h1>
+    <h4>If you have any questions or want to book a trial class with us, please fill the form below. 
+        We will answer your requests as soon as possible.</h4>
+	<form method="POST">
+		{% csrf_token %}
+		{{ form|crispy }}                    
+		<button class="btn btn-primary" type="submit">Send</button>
+		<a href="{% url 'homepage:homepage'%}" class="btn btn-info" role="button" style="font-family: Times; padding: 5px; font-size:17px;">
+            Come back to the main page</a>
+	</form>
+</div>
+<footer>
+    <div class="row background-footer">
+        <br>
+        <p style="color:white; text-align:center; font-family:Arial; font-size:12px"><br>COPYRIGHT © 2023 YOUR LANGUAGE LOUNGE  - ALL RIGHTS RESERVED.<p>
+    </div>
+<footer>
+
+{%endblock%}

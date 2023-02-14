@@ -1,0 +1,40 @@
+{%extends "base_classes.html"%}
+{% load static %}  
+{%block content%}
+<div class = "row">
+    <div class="col-md">
+        <br>
+        <h2>Communicative English Course<h2>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-4">
+        <div style="display:flex;justify-content:center">
+        <img class = "img-fluid" src={% static 'classes/my_images/class1.jpg' %} alt="communicative course" width="400" height="500" >
+        </div>
+    </div>
+    <div class="col-md-7">
+        <h3 style="text-align: center; font-size: 40px;">Course Information</h3>
+        <p>Develop your speaking, listening, reading and writing skills, and improve your grammar and vocabulary in our communicative General English classes. <br>We offer courses at all levels and your level will be tested at the beginning and at the end of the course.   
+            If you are looking for something more flexible, you can customise your course, form your own group (up to 6 people) and choose course content, course length and the number of sessions.
+            <br>
+            <br>Please see below for course options. 
+            <br>Want another option? Please contact us. <p>
+    </div>
+</div>
+<div class="row">
+    <h3 style="text-align: center; font-size: 40px;">Course Options</h3>
+    <div class="col-md-6">
+        <h4>Individual Class: £20/lesson (£480/course)</h4>
+        <p style='text-align: center;'>12 weeks; Two sessions/week; 75 mins/session; Only you!<p>
+    </div>
+    <div class="col-md-6">
+        <h4>Group Class: £12.5/lesson (£300/course)</h4>
+        <p style='text-align: center'>12 weeks; Two sessions/week; 75 mins/lesson, maximum 6 students/group<p>
+            <br>
+    </div>
+    <br>
+    <div class="text-center"><a href="{% url 'contact_us:contact_us'%}" class="btn btn-outline-secondary" data-mdb-ripple-color="dark" role="button" style="font-family: Times; padding: 5px; font-size:25px"> -   Contact Us   - </a></div>
+</div>
+{%endblock%}

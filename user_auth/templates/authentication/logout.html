@@ -1,0 +1,11 @@
+{% extends "base_auth.html" %}
+{% load static %} 
+{% block logout%}
+<h2> You have been logged out.</h2>
+<h3>See you soon!<h3>
+<a href="{% url 'homepage:homepage'%}" class="btn btn-info" role="button" style="font-family: Times; padding: 5px; font-size:17px;" 
+>Come back to the main page</a>
+
+<a href="{% url 'user_auth:login'%}" class="btn btn-success" role="button" style="font-family: Times; padding: 5px; font-size:17px" 
+>Login</a>
+{%endblock%}

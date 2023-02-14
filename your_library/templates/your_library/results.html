@@ -1,0 +1,31 @@
+{% extends 'base_library.html' %}
+{% load static %}
+{% block content %}
+<div class = "row">
+  <div class="col-md text-center">
+    <h1>{{ post.title }}<h1>
+      <h5 style='text-align: center;'>Author: {{post.author}}</h5>
+      <h5 style='text-align: center;'> posted on {{ post.pub_date }}</h5>
+      <br>
+      <h3>Below is what people think about the post:</h3>
+      <br>
+    <h3 style='color: #ed811c'> {{ post.question_text }} </h3>
+    <br>
+    {% for choice in post.choice_set.all %}
+    <li>
+        <label>{{ choice.choice_text }} -- {{ choice.votes}}
+        vote{{choice.votes|pluralize}}<label>
+    </li>
+    {% endfor %}
+    <br>
+    <a href="{% url 'your_library:details' post.id %}">
+      Vote or Read again?</a>
+    <a href="{% url 'homepage:homepage'%}" class="btn btn-info" role="button" style="font-family: Times; padding: 5px; font-size:17px;">
+      Come back to the main page</a>
+      <br>
+      <br>
+      <br>
+      <br>
+  </div>
+</div>
+{% endblock %} 

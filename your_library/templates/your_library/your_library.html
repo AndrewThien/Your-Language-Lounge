@@ -1,0 +1,30 @@
+{%extends "base_library.html"%}
+{% load static %}  
+{%block content%}
+
+<div class = "row">
+    <div class="col-md">
+        <h2>Welcome to Library of Learning English Materials</h2>
+        <div class = "row">
+            <div class="col-md text-center">
+                <h4 style='font-size:23px;'>(Note: There is a small survey in the end of the each post. If you want, please log in and answer it.)</h4>
+                <br>
+            </div>
+        </div>
+{% if latest_post_list %}
+    {% for post in latest_post_list %}
+        <div class = "row">
+            <div class="col-md card text-center">
+        <a href = "{% url 'your_library:details' post.id %}">
+        {{ post.title }}</a>
+            </div>
+        </div>
+        <br>
+    {% endfor %}
+{% else %}
+<p>Posts are coming soon.</p>
+{% endif %}
+
+    </div>
+</div>
+{%endblock%}

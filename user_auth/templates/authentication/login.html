@@ -1,0 +1,28 @@
+{% extends "base_auth.html" %}
+{% load static %} 
+{% block login%}
+<h2> Login </h2>
+<h5 style="font-family: Times; color: red">(Note: You can only vote for posts in Materials section after login)</h5>
+<br>
+<form action="{% url 'user_auth:authenticate_user' %}" method="post">
+    <div class='text-center'>
+	{% if messages %}
+	<ul class="messages">
+		{% for message in messages %}
+		<li style = 'color:red'{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+    <div>
+{% csrf_token %}
+    <label>Username</label>
+    <input type="text" name="username" placeholder="User" required>
+<br/><br/>
+    <label>Password</label>
+    <input type="password" name="password" required>
+<br/><br/>
+    <button class="btn btn-primary" type="submit">Log in</button>
+    <a href="{% url 'homepage:homepage'%}" class="btn btn-info" role="button" style="font-family: Times; padding: 5px; font-size:17px;">
+        Come back to the main page</a>
+</form>
+{%endblock%}
