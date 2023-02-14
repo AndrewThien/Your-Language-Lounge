@@ -5,6 +5,15 @@ from django.contrib import messages
 
 
 def user_register(request):
+    
+	""" There are two checking in this function:
+ 1- The first checks if the form is being posted
+ 2- The second checks if the form is valid
+	
+	If both check's results are True, then the form information will be saved under a user, 
+ he/she will be logged in and re-direct to register_sucess page eventually.
+	
+ 	"""
 	if request.method == "POST":
 		form = NewUserForm(request.POST)
 		if form.is_valid():

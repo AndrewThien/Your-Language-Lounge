@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>contact_us package &mdash; Your-Language-Lounge 14.02.23 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="contact_us.migrations package" href="contact_us.migrations.html" />
+    <link rel="prev" title="classes.migrations package" href="classes.migrations.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Your-Language-Lounge
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">YourLanguageLounge</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="YourLanguageLounge.html">YourLanguageLounge package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes.html">classes package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">contact_us package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="contact_us.migrations.html">contact_us.migrations package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-contact_us.admin">contact_us.admin module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-contact_us.apps">contact_us.apps module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#contact_us.apps.ContactUsConfig"><code class="docutils literal notranslate"><span class="pre">ContactUsConfig</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-contact_us.forms">contact_us.forms module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#contact_us.forms.ContactForm"><code class="docutils literal notranslate"><span class="pre">ContactForm</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-contact_us.models">contact_us.models module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-contact_us.tests">contact_us.tests module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-contact_us.urls">contact_us.urls module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-contact_us.views">contact_us.views module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#contact_us.views.contactView"><code class="docutils literal notranslate"><span class="pre">contactView()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#contact_us.views.successView"><code class="docutils literal notranslate"><span class="pre">successView()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-contact_us">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="homepage.html">homepage package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_auth.html">user_auth package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_register.html">user_register package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="why_us.html">why_us package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="your_library.html">your_library package</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Your-Language-Lounge</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">YourLanguageLounge</a></li>
+      <li class="breadcrumb-item active">contact_us package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/contact_us.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="contact-us-package">
+<h1>contact_us package<a class="headerlink" href="#contact-us-package" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact_us.migrations.html">contact_us.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contact_us.migrations.html#module-contact_us.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-contact_us.admin">
+<span id="contact-us-admin-module"></span><h2>contact_us.admin module<a class="headerlink" href="#module-contact_us.admin" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-contact_us.apps">
+<span id="contact-us-apps-module"></span><h2>contact_us.apps module<a class="headerlink" href="#module-contact_us.apps" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="contact_us.apps.ContactUsConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contact_us.apps.</span></span><span class="sig-name descname"><span class="pre">ContactUsConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/contact_us/apps.html#ContactUsConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#contact_us.apps.ContactUsConfig" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contact_us.apps.ContactUsConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#contact_us.apps.ContactUsConfig.default_auto_field" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contact_us.apps.ContactUsConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'contact_us'</span></em><a class="headerlink" href="#contact_us.apps.ContactUsConfig.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-contact_us.forms">
+<span id="contact-us-forms-module"></span><h2>contact_us.forms module<a class="headerlink" href="#module-contact_us.forms" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="contact_us.forms.ContactForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">contact_us.forms.</span></span><span class="sig-name descname"><span class="pre">ContactForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_id='id_%s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_class=&lt;class</span> <span class="pre">'django.forms.utils.ErrorList'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_suffix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">empty_permitted=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field_order=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_required_attribute=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">renderer=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/contact_us/forms.html#ContactForm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#contact_us.forms.ContactForm" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Form</span></code></p>
+<p>Create a ContactForm class with the pre-built form from Django.
+Then, declare the fields and their conditions</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contact_us.forms.ContactForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'email':</span> <span class="pre">&lt;django.forms.fields.EmailField</span> <span class="pre">object&gt;,</span> <span class="pre">'message':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'subject':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#contact_us.forms.ContactForm.base_fields" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="contact_us.forms.ContactForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'email':</span> <span class="pre">&lt;django.forms.fields.EmailField</span> <span class="pre">object&gt;,</span> <span class="pre">'message':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'subject':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#contact_us.forms.ContactForm.declared_fields" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="contact_us.forms.ContactForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#contact_us.forms.ContactForm.media" title="Permalink to this definition"></a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-contact_us.models">
+<span id="contact-us-models-module"></span><h2>contact_us.models module<a class="headerlink" href="#module-contact_us.models" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-contact_us.tests">
+<span id="contact-us-tests-module"></span><h2>contact_us.tests module<a class="headerlink" href="#module-contact_us.tests" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-contact_us.urls">
+<span id="contact-us-urls-module"></span><h2>contact_us.urls module<a class="headerlink" href="#module-contact_us.urls" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-contact_us.views">
+<span id="contact-us-views-module"></span><h2>contact_us.views module<a class="headerlink" href="#module-contact_us.views" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="contact_us.views.contactView">
+<span class="sig-prename descclassname"><span class="pre">contact_us.views.</span></span><span class="sig-name descname"><span class="pre">contactView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/contact_us/views.html#contactView"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#contact_us.views.contactView" title="Permalink to this definition"></a></dt>
+<dd><p>After importing the ‘ContactForm’ from ‘forms’, check if the user post the form and had it valid.
+If the form is valid, then declare the subject, from_email, and form the body part of the user’s message</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="contact_us.views.successView">
+<span class="sig-prename descclassname"><span class="pre">contact_us.views.</span></span><span class="sig-name descname"><span class="pre">successView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/contact_us/views.html#successView"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#contact_us.views.successView" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-contact_us">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-contact_us" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classes.migrations.html" class="btn btn-neutral float-left" title="classes.migrations package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="contact_us.migrations.html" class="btn btn-neutral float-right" title="contact_us.migrations package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Tri Thien Nguyen.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -4,6 +4,10 @@ from django.shortcuts import render, redirect
 from .forms import ContactForm
 # parts abpput contact us form was taken and adapted from https://learndjango.com/tutorials/django-email-contact-form-tutorial and https://ordinarycoders.com/blog/article/build-a-django-contact-form-with-email-backend
 def contactView(request):
+    """ 
+    After importing the 'ContactForm' from 'forms', check if the user post the form and had it valid.
+    If the form is valid, then declare the subject, from_email, and form the body part of the user's message
+    """
     if request.method == "GET":
         form = ContactForm()
     else:
