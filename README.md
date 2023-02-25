@@ -1,8 +1,8 @@
 # Your Language Lounge
 
-This is my first website built using Django framework. The website can be used as a promotion page for a language center with much information about their values, teachers, courses, etc. Also, there is a section containing English Learning materials and related posts. A small survey is included at the end of each material and this will enable users to know other users' opinion about the post.
+This is my first website built using the Django framework. The website can be used as a promotion page for a language center with much information about their values, teachers, courses, etc. Also, there is a section containing English Learning materials and related posts. A small survey is included at the end of each material and this will enable users to know other users' opinions about the post.
 
-All the buttons and layout are designed nicely and aim to facilitate user's intuitive behaviour. Also, log in is required before answering the question in the survey. Those are a few of noticeable features of this website. 
+All the buttons and layouts are designed nicely and aim to facilitate the user's intuitive behaviour. Also, logging in is required before answering the question in the survey. Those are some of noticeable features of this website.
 
 ## Installation <a name="installation"/>
 
